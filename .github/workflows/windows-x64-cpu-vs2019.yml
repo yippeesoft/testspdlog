@@ -13,13 +13,13 @@ jobs:
         with:
           submodules: true
 
-      - name: vcpkgtest1
-        shell: cmd
-        run: |
-          git clone https://github.com/microsoft/vcpkg
-          cmd /c .\vcpkg\bootstrap-vcpkg.bat
-          dir /s *.exe
-          .\vcpkg\vcpkg.exe install spdlog
+      # - name: vcpkgtest1
+      #   shell: cmd
+      #   run: |
+      #     git clone https://github.com/microsoft/vcpkg
+      #     cmd /c .\vcpkg\bootstrap-vcpkg.bat
+      #     dir /s *.exe
+      #     .\vcpkg\vcpkg.exe install spdlog
 
       - name: configure
         run: |
