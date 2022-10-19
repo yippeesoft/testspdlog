@@ -73,7 +73,7 @@ if(NOT DEFINED SPDLOG_MASTER_PROJECT)
   endif()
 endif()
 
-option(SPDLOG_BUILD_ALL "Build all artifacts" ON)
+option(SPDLOG_BUILD_ALL "Build all artifacts" OFF)
 
 # build shared option
 option(SPDLOG_BUILD_SHARED "Build shared library" OFF)
@@ -89,7 +89,7 @@ option(SPDLOG_BUILD_PIC "Build position independent code (-fPIC)" OFF)
 
 # example options
 option(SPDLOG_BUILD_EXAMPLE "Build example" ${SPDLOG_MASTER_PROJECT})
-option(SPDLOG_BUILD_EXAMPLE_HO "Build header only example" OFF)
+option(SPDLOG_BUILD_EXAMPLE_HO "Build header only example" ON)
 
 # testing options
 option(SPDLOG_BUILD_TESTS "Build tests" OFF)
