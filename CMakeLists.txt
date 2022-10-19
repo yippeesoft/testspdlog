@@ -19,7 +19,7 @@ set(CMAKE_EXE_LINKER_FLAGS
 
 if(NOT TARGET spdlog)
   # Stand-alone build
-  find_package(spdlog REQUIRED)
+  # find_package(spdlog REQUIRED)
 endif()
 
 # ---------------------------------------------------------------------------------------
